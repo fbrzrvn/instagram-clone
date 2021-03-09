@@ -1,0 +1,42 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0 20px;
+  height: 60px;
+  background: $white;
+  position: fixed;
+  top: 0;
+
+  &__logo {
+    width: 120px;
+    height: 60px;
+    cursor: pointer;
+  }
+
+  &__icons {
+    span {
+      font-size: 24px;
+      padding-left: 16px;
+      cursor: pointer;
+    }
+  }
+  @media screen and (max-width: 540px) {
+    form { display: none; }
+  }
+
+  &__search {
+    border: 1px solid $lightGray;
+    border-radius: 3px;
+    color: $ligthText;
+    background: $bg;
+    padding: 7px;
+    text-align: center;
+    outline: none;
+    &:active,
+    &:focus {
+      text-align: initial;
+    }
+  }
+}
