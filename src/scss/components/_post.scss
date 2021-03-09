@@ -1,0 +1,116 @@
+.post {
+  margin: 0 auto 45px;
+  max-width: 600px;
+  background-color: $white;
+  border: 1px solid $lightGray;
+  @media screen and (max-width: 768px) {
+    border: none;
+    margin: 0 auto;
+    padding-bottom: 24px;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    &__user {
+      display: flex;
+      align-items: center;
+      h3:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+    span {
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+
+  &__avatar {
+    margin-right: 8px;
+    cursor: pointer;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid $lightGray;
+    border-bottom: 1px solid $lightGray;
+    @media screen and (max-width: 768px) {
+      border: none;
+    }
+  }
+
+  &__body {
+    padding: 8px 16px;
+    &__icons {
+      font-size: 28px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      span {
+        margin-right: 10px;
+        &:last-child {
+          margin-left: auto;
+          margin-right: 0;
+        }
+      }
+    }
+
+    &__likes {
+      margin-bottom: 8px;
+    }
+
+    &__text {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      h4 {
+        font-weight: normal;
+      }
+    }
+
+    &__lightText {
+      color: $ligthText;
+      margin-bottom: 4px;
+      cursor: pointer;
+    }
+
+    &__date {
+      color: $ligthText;
+      font-size: 10px;
+    }
+
+    &__comment {
+      display: flex;
+      align-items: center;
+      border-top: 1px solid $lightGray;
+      padding: 8px 16px;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+      span {
+        line-height: 28px;
+        font-size: 28px;
+        margin-top: 4px;
+        cursor: pointer;
+      }
+      form, input {
+        width: 100%;
+        border: none;
+      }
+      input {
+        margin: 0 8px;
+        line-height: 24px;
+        outline: none;
+      }
+    }
+
+    &__button {
+      color: $link;
+      opacity: .7;
+      cursor: pointer;
+    }
+  }
+}
