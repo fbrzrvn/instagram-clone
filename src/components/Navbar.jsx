@@ -7,7 +7,12 @@ import {
   IoHeartOutline,
   IoPersonCircleSharp } from "react-icons/io5";
 
-const Navbar = () => {
+const Navbar = ({ isLog, setIsLog }) => {
+
+  const handleClick = () => {
+    setIsLog(prevVal => !prevVal);
+  }
+
   return (
     <div className="navbar">
       <img src={logo} alt="logo" className="navbar__logo" />
@@ -19,7 +24,7 @@ const Navbar = () => {
         <span><IoPaperPlaneOutline /></span>
         <span><IoCompassOutline /></span>
         <span><IoHeartOutline /></span>
-        <span><IoPersonCircleSharp /></span>
+        <span onClick={handleClick}><IoPersonCircleSharp /></span>
       </div>
     </div>
   )
