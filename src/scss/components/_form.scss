@@ -1,0 +1,121 @@
+.form {
+  text-align: center;
+
+  &__wrap {
+    @include flexColumnCenter();
+    @include border(3px, $lightGray);
+    padding: 0 20px;
+    background: $white;
+    @media screen and (max-width: 450px) {
+      border: none;
+    }
+  }
+
+  &__logo {
+    width: 175px;
+    margin: 16px auto 12px;
+    cursor: pointer;
+  }
+
+  &__divider {
+    display: flex;
+    margin: 10px 20px 18px;
+    padding: 0 20px;
+    width: 100%;
+    &__line {
+      flex-grow: 1;
+      flex-shrink: 1;
+      background: $lightGray;
+      height: 1px;
+      position: relative;
+      top: .45em;
+    }
+    &__text {
+      color: $ligthText;
+      flex-grow: 0;
+      flex-shrink: 0;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 15px;
+      margin: 0 18px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__login {
+    @include flexCenter();
+    flex-direction: column;
+    padding-bottom: 20px;
+    input {
+      @include input($bg);
+      @include border('3px', $lightGray);
+      @media screen and (max-width: 320px) {
+        width: 100%;
+      }
+    }
+
+    &__link {
+      color: $link;
+      font-weight: 700;
+    }
+    &__forgotPass {
+      color: #00376b;
+      margin-top: 8px;
+      font-size: 12px;
+    }
+    &__btn {
+      width: 260px;
+      height: 30px;
+      padding: 5px 9px;
+      background: $link;
+      color: $white;
+      border: none;
+      border-radius: 4px;
+      margin: 12px 20px;
+      cursor: pointer;
+      @media screen and (max-width: 320px) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__sign-up {
+    padding: 20px;
+    background: $white;
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px auto;
+    @include border('3px', $lightGray);
+    @media screen and (max-width: 450px) {
+      margin: 0;
+      border: none;
+    }
+  }
+
+  p {
+    margin: 15px;
+  }
+
+  &__store-btn {
+    @include flexCenter();
+    justify-content: center;
+    margin: 10px 0;
+  }
+}
+.facebook__login {
+  color: $fb;
+  @include flexCenter();
+  background: transparent;
+  border: none;
+  margin: 12px auto;
+  font-weight: 700;
+  cursor: pointer;
+  span:first-child {
+    margin-right: 8px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  span:last-child {
+    font-size: 14px;
+  }
+}

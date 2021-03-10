@@ -1,0 +1,22 @@
+.home {
+  @include flexCenter();
+  flex-direction: column;
+  background: $bg;
+  max-width: 1100px;
+  margin: auto;
+
+  &__histories {
+    @include flexCenter();
+    overflow: hidden;
+    border: 1px solid $lightGray;
+    border-radius: 3px;
+    margin: 90px auto 0;
+    padding: 0 16px;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  &__wrap {
+    padding: 30px;
+  }
+}

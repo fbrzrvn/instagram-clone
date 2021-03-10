@@ -1,0 +1,40 @@
+.navbar {
+  @include flexCenter();
+  justify-content: space-around;
+  width: 100%;
+  padding: 0 20px;
+  height: 60px;
+  background: $white;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+
+  &__logo {
+    width: 103px;
+    cursor: pointer;
+  }
+
+  &__icons {
+    span {
+      font-size: 24px;
+      padding-left: 16px;
+      cursor: pointer;
+    }
+  }
+  @media screen and (max-width: 540px) {
+    form { display: none; }
+  }
+
+  &__search {
+    color: $ligthText;
+    background: $bg;
+    padding: 7px;
+    text-align: center;
+    outline: none;
+    @include border('3px', $lightGray);
+    &:active,
+    &:focus {
+      text-align: initial;
+    }
+  }
+}
