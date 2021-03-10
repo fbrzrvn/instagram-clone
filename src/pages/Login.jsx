@@ -1,18 +1,12 @@
 import React from 'react';
+import Form from '../components/Form';
 
-const Login = ({ isLog, setIsLog }) => {
-
-  const handleClick = () => {
-    setIsLog(prevVal => !prevVal);
-  }
-
+const Login = ({ setIsLog }) => {
   return (
-    <div>
-      <h2>Login Page</h2>
-      <button onClick={handleClick}>Login</button>
+    <div className="login">
+      <Form setIsLog={setIsLog} />
     </div>
   )
 }
 
 export default Login;
-
