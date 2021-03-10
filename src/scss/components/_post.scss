@@ -1,16 +1,14 @@
 .post {
   margin: 0 auto 45px;
   max-width: 600px;
-  background-color: $white;
-  border: 1px solid $lightGray;
+  @include border('3px', $lightGray);
   @media screen and (max-width: 768px) {
     border: none;
     margin: 0 auto;
     padding-bottom: 24px;
   }
   &__header {
-    display: flex;
-    align-items: center;
+    @include flexCenter();
     justify-content: space-between;
     padding: 16px;
     &__user {
@@ -46,8 +44,7 @@
     padding: 8px 16px;
     &__icons {
       font-size: 28px;
-      display: flex;
-      align-items: center;
+      @include flexCenter();
       cursor: pointer;
       span {
         margin-right: 10px;
@@ -83,8 +80,7 @@
     }
 
     &__comment {
-      display: flex;
-      align-items: center;
+      @include flexCenter();
       border-top: 1px solid $lightGray;
       padding: 8px 16px;
       @media screen and (max-width: 768px) {

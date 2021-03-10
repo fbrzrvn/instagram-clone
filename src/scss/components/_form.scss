@@ -2,22 +2,18 @@
   text-align: center;
 
   &__wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flexColumnCenter();
+    @include border(3px, $lightGray);
     padding: 0 20px;
     background: $white;
-    border: 1px solid $lightGray;
     @media screen and (max-width: 450px) {
-      height: 100vh;
-      width: 100vw;
       border: none;
     }
   }
 
   &__logo {
     width: 175px;
-    margin: 22px auto 12px;
+    margin: 16px auto 12px;
     cursor: pointer;
   }
 
@@ -47,19 +43,12 @@
   }
 
   &__login {
-    display: flex;
+    @include flexCenter();
     flex-direction: column;
-    align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     input {
-      width: 260px;
-      height: 38px;
-      padding: 9px 0 7px 8px;
-      margin: 0 auto 8px;
-      background: $bg;
-      border: 1px solid $lightGray;
-      border-radius: 3px;
-      outline: none;
+      @include input($bg);
+      @include border('3px', $lightGray);
       @media screen and (max-width: 320px) {
         width: 100%;
       }
@@ -93,10 +82,14 @@
   &__sign-up {
     padding: 20px;
     background: $white;
-    border: 1px solid $lightGray;
     width: 100%;
     padding: 10px 0;
     margin: 10px auto;
+    @include border('3px', $lightGray);
+    @media screen and (max-width: 450px) {
+      margin: 0;
+      border: none;
+    }
   }
 
   p {
@@ -104,18 +97,17 @@
   }
 
   &__store-btn {
-    display: flex;
+    @include flexCenter();
     justify-content: center;
     margin: 10px 0;
   }
 }
 .facebook__login {
   color: $fb;
+  @include flexCenter();
   background: transparent;
   border: none;
   margin: 12px auto;
-  display: flex;
-  align-items: center;
   font-weight: 700;
   cursor: pointer;
   span:first-child {

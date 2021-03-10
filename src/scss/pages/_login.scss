@@ -1,6 +1,5 @@
 .login {
-  display: flex;
-  align-items: center;
+  @include flexCenter();
   justify-content: center;
   margin: 45px auto 0;
   // padding-bottom: 45px;
