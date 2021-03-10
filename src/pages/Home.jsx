@@ -4,11 +4,11 @@ import Post from '../components/Post';
 import History from '../components/History';
 import { postOne, postTwo, postThree, postFour } from '../data/postData';
 
-const Home = ({ isLog, setIsLog }) => {
+const Home = ({ setIsLog }) => {
 
   return (
     <div className="home">
-      <Navbar isLog={isLog} setIsLog={setIsLog} />
+      <Navbar setIsLog={setIsLog} />
       <div className="home__histories">
         <History username="faber" />
         <History username="codeMaster" />

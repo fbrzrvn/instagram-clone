@@ -1,7 +1,7 @@
-import reactImg from '../assets/images/react-logo.png';
-import reduxImg from '../assets/images/redux-logo.png';
-import nodejsImg from '../assets/images/nodejs-logo.png';
-import typescriptImg from '../assets/images/typescript-logo.png';
+import reactImg from '../assets/images/posts/react-logo.png';
+import reduxImg from '../assets/images/posts/redux-logo.png';
+import nodejsImg from '../assets/images/posts/nodejs-logo.png';
+import typescriptImg from '../assets/images/posts/typescript-logo.png';
 
 export const postOne = {
   id: 1,

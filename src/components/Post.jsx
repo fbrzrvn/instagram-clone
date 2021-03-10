@@ -22,7 +22,7 @@ const Post = ({ image, postAuthor, likes, caption, comments, date }) => {
     <div className="post">
       <div className="post__header">
         <div className="post__header__user">
-          <Avatar className="post__avatar"/>
+          <Avatar className="post__avatar">{postAuthor.charAt(0)}</Avatar>
           <h3>{postAuthor}</h3>
         </div>
         <div className="post__header__options">

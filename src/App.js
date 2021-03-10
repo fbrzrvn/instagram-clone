@@ -10,8 +10,8 @@ function App() {
     <div className="App">
       {
         !isLog ?
-          <Login isLog={isLog} setIsLog={setIsLog} /> :
-          <Home isLog={isLog} setIsLog={setIsLog} />
+          <Login setIsLog={setIsLog} /> :
+          <Home setIsLog={setIsLog} />
       }
     </div>
   );

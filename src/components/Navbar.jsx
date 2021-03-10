@@ -7,7 +7,7 @@ import {
   IoHeartOutline,
   IoPersonCircleSharp } from "react-icons/io5";
 
-const Navbar = ({ isLog, setIsLog }) => {
+const Navbar = ({ setIsLog }) => {
 
   const handleClick = () => {
     setIsLog(prevVal => !prevVal);
