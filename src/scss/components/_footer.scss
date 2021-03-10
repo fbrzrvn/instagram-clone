@@ -1,0 +1,39 @@
+.footer {
+  margin-bottom: 52px;
+  font-size: 12px;
+  color: $ligthText;
+
+  &__wrap {
+    @include flexCenter();
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 16px;
+    span {
+      margin: 4px 8px;
+      cursor: pointer;
+    }
+  }
+
+  &__bottom {
+    @include flexCenter();
+    justify-content: center;
+    margin: 12px auto;
+
+    &__select {
+      @include flexCenter();
+      margin-top: 4px;
+      select {
+        border: none;
+        color: $ligthText;
+        background: $bg;
+        cursor: pointer;
+      }
+    }
+
+    &__copy {
+      display: flex;
+      justify-content: center;
+      margin: 4px 0 0 16px;
+    }
+  }
+}

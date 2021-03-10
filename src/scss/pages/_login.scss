@@ -1,8 +1,12 @@
+.main {
+  @include flexColumnCenter();
+  align-items: center;
+}
 .login {
   @include flexCenter();
   justify-content: center;
   margin: 45px auto 0;
-  // padding-bottom: 45px;
+  padding-bottom: 45px;
   &__img {
     @media screen and (max-width: 876px) {
       display: none;
