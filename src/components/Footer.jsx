@@ -1,4 +1,5 @@
 import React from 'react';
+import { languages } from '../data/languages';
 
 const Footer = () => {
   return (
@@ -26,8 +27,11 @@ const Footer = () => {
       </div>
       <div className="footer__bottom">
         <div className="footer__bottom__select">
-          <span>English</span>
-          <select></select>
+           <select name="lang" defaultValue="en">
+            { languages.map((l, index) => (
+              <option key={index} value={l.value}>{l.name}</option>
+            ))}
+          </select>
         </div>
         <div className="footer__bottom__copy">
           © 2021 Instagram from Facebook
