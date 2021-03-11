@@ -17,13 +17,18 @@ const Form = ({ setIsLog }) => {
         <form className="form__login">
           <input type="text" placeholder="Phone number, username or email" />
           <input type="password" placeholder="Password" />
-          <button className="form__login__btn" onClick={handleClick}>Login</button>
+          <button
+            type="button"
+            className="form__login__btn"
+            onClick={handleClick}
+          >Login</button>
           <div className="form__divider">
             <div className="form__divider__line"></div>
             <div className="form__divider__text">or</div>
             <div className="form__divider__line"></div>
           </div>
           <button
+            type="button"
             className="facebook__login"
             onClick={handleClick}
           >
