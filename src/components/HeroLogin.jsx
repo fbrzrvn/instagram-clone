@@ -20,6 +20,9 @@ const HeroLogin = () => {
     setInterval(() => {
       setRandomImages();
     }, 3000)
+    return function cleanup() {
+      setRandomImages();
+    }
   }, [setRandomImages]);
 
   return (

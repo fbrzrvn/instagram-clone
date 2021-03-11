@@ -38,7 +38,7 @@ const Post = ({ image, postAuthor, likes, caption, comments, date }) => {
           <span><IoBookmarkOutline /></span>
         </div>
         <h4 className="post__body__likes">
-          { likes > 0 ? `${likes} Likes` : `${likes} Like` }
+          { likes > 0 ? `${likes} likes` : `${likes} like` }
         </h4>
         <div className="post__body__text">
           <h4><strong>{postAuthor} </strong> {caption}</h4>
